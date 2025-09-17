@@ -1,22 +1,13 @@
 name: CI
 
-
-
 on: [push, workflow_dispatch]
 
-
-
 jobs:
-
+  
   build:
 
-
-
-    runs-on: windows-latest
-
-
-
-    steps:
+   runs-on: windows-latest
+      steps:
 
     - name: Download
 
@@ -47,13 +38,6 @@ jobs:
     - name: Create Tunnel
 
       run: .\ngrok\ngrok.exe tcp 3389
-
-
-
-
-
-
-
 
 NGROK_AUTH_TOKEN 
 
